@@ -21,6 +21,6 @@ s1 = "book"
 s2 = "textbook"
 s3 = "TEXtBoOk"
 solution = Solution()
-solution.halvesAreAlike(s1)
-solution.halvesAreAlike(s2)
-solution.halvesAreAlike(s3)
+assert solution.halvesAreAlike(s1) == True
+assert solution.halvesAreAlike(s2) == False
+assert solution.halvesAreAlike(s3) == False
