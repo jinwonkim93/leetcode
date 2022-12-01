@@ -5,7 +5,6 @@ class Solution:
         a = s[:len(s)//2]
         b = s[len(s)//2:]
 
-
         def isVowel(letter):
             vowels_dict = {"a" : True,
                         "e" : True,
@@ -16,7 +15,7 @@ class Solution:
             return vowels_dict.get(letter, False)
         
         return len(list(filter(isVowel, a))) == len(list(filter(isVowel, b)))
-        print()
+
 
 s1 = "book"
 s2 = "textbook"
