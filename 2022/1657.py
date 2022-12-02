@@ -6,9 +6,7 @@ class Solution:
         if set(word1) != set(word2): return False
         word1 = sorted(Counter(word1).values())
         word2 = sorted(Counter(word2).values())
-        word1 = list(map(str, word1))
-        word2 = list(map(str, word2))
-        return hash(" ".join(word1)) == hash(" ".join(word2))
+        return word1==word2
 
 
 
