@@ -8,7 +8,7 @@ class Solution:
         word2 = sorted(Counter(word2).values())
         word1 = list(map(str, word1))
         word2 = list(map(str, word2))
-        return hash("".join(word1)) == hash("".join(word2))
+        return hash(" ".join(word1)) == hash(" ".join(word2))
 
 
 
